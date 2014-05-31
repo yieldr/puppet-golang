@@ -59,4 +59,11 @@ class golang (
     mode    => "a+x",
   }
 
+  file { $workspace:
+    ensure => "directory",
+    owner  => vagrant,
+    group  => vagrant,
+    mode   => "a+x",
+  }
+
 }
