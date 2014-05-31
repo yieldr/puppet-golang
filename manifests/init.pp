@@ -10,6 +10,7 @@
 # === Authors
 #
 # Darren Coxall <darren@darrencoxall.com>
+# Alex Kalyvitis <alex.kalyvitis@yieldr.com>
 #
 class golang (
   $version      = "1.1.2",
@@ -22,7 +23,7 @@ class golang (
   if ($download_url) {
     $download_location = $download_url
   } else {
-    $download_location = "https://go.googlecode.com/files/go$version.$arch.tar.gz"
+    $download_location = "https://storage.googleapis.com/golang/go$version.$arch.tar.gz"
   }
 
   Exec {
