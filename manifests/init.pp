@@ -23,7 +23,7 @@ class golang (
   if ($download_url) {
     $download_location = $download_url
   } else {
-    $download_location = "http://golang.org/dl/go$version.$arch.tar.gz"
+    $download_location = "https://storage.googleapis.com/golang/go$version.$arch.tar.gz"
   }
 
   Exec {
